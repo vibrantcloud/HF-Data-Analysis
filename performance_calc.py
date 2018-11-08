@@ -17,3 +17,16 @@ elif total_performance > minx and total_performance > variable_hours:
 elif total_performance > minx and total_performance < variable_hours:
     print(total_performance)
     
+## Pandas Version ## 
+
+conditions = [(df['Total Sales'] > df['Total Forecast']) & (df['Total Perf'] < 0),
+              (df['Total Perf'] >= 0),
+              (df['Total Perf'] < df['Min']) & (df['Min'] > df['Variable Hours']),
+              (df['Total Perf'] < df['Min']) & (df['Min'] < df['Variable Hours']),
+              (df['Total Perf'] > df['Min']) & (df['Total Perf'] > df['Variable Hours']),
+              (df['Total Perf'] > df['Min']) & (df['Total Perf'] < df['Variable Hours']) 
+             ]
+outputs = [0,df['Total Perf'], df['Min'],df['Variable Hours'],df['Total Performance'],df['Total Performance']]
+    
+    
+    
