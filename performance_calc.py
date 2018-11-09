@@ -9,9 +9,9 @@ if total_sale > total_forecast and total_performance < 0:
 elif total_performance >= 0:
     print(total_performance)
 elif total_performance < minx and minx > variable_hours:
-     print(minx)
+     print(variable_hours)
 elif total_performance < minx and minx < variable_hours:
-    print(variable_hours)
+    print(minx)
 elif total_performance > minx and total_performance > variable_hours:
     print(total_performance) 
 elif total_performance > minx and total_performance < variable_hours:
