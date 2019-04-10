@@ -61,3 +61,14 @@ df = df.assign(
 ## Great, this gives us a headcount as per the budget, we can then apply the same formula on the current budget
 ## To work out any variances. 
 
+"""
+
+Current Budget	Hours	Store	ft	pt_25	pt_16	pt_8	remainder
+0	27	63	243	1.0	1.0	0.0	0.0	0.5
+1	11	64	108	1.0	1.0	0.0	0.0	1.5
+2	35	86	152	2.0	0.0	0.0	1.0	3.0
+3	2	71	350	1.0	1.0	0.0	1.0	0.5
+4	14	42	169	1.0	0.0	0.0	0.0	4.5
+
+"""
+
