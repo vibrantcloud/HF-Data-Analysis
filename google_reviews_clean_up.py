@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-file = input(r"Enter your File Path : ")
-df = pd.read_csv(file +".csv")
+file = ''
+df = pd.read_csv(file)
 
 ## Melt the Curent DF ## 
 new_df = pd.melt(df,id_vars=['ID'],var_name=['Store'],value_name='Score').fillna(0).set_index('ID')
