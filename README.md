@@ -1,9 +1,5 @@
-# HF-Data-Analysis
-HF Data Analysis
-Master Repo for HF Data Analytics.
+# Halfords Analytics Code Base
 
-Code used for working and automating reports.
+# Repo for Random scripts and projects for automation.
 
-Learning platform for myself.
-
-Most code in Python and small snippets in Javascript.
+# code mainly revovles around workforce planning, forecasting, what-ifs and automation. 
