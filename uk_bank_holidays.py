@@ -1,7 +1,8 @@
 """
 
 Get the latest bank holidays from the UK Gov't Website, useful for highlighting key dates and outliers in sales and marketing activities. 
-
+This is contingent on the UK's API to grab the latest JSON. 
+Then we will pass this into a a pandas dataframe for easy reading, merging and what not. 
 
 """
 
