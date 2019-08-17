@@ -21,17 +21,12 @@ from datetime import datetime, timedelta
 # create a date variable for the filename 
 file_date = datetime.today().strftime('%d%m%Y')
 
-print("Hi, this program will autorename the Training Credits files we receive on a weekly basis")
-print(f"The current location is set to {my_path}")
-print("To close the program hit CTRL-C on your keyboard whilst on the command terminal.")
-
-
 os.chdir(my_path)
 
 print("Hi, this program will autorename the Training Credits files we receive on a weekly basis")
 print(f"The current location is set to {my_path}")
 print("To close the program hit CTRL-C on your keyboard whilst on the command terminal.")
-file_date = datetime.today().strftime('%d%m%Y')
+
 
 class MyHandler(FileSystemEventHandler):
     def __init__(self):
