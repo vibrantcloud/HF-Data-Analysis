@@ -16,7 +16,8 @@ from shutil import copyfile
 my_path = r"C:\Users\umarh\OneDrive\Documents\watchdog test"
 from datetime import datetime, timedelta
 
-
+# create a date variable for the filename 
+file_date = datetime.today().strftime('%d%m%Y')
 
 print("Hi, this program will autorename the Training Credits files we receive on a weekly basis")
 print(f"The current location is set to {my_path}")
@@ -41,10 +42,10 @@ class MyHandler(FileSystemEventHandler):
                 self.last_modified = datetime.now()
                 print(f'Event type: {event.event_type}  path : {event.src_path}')
                 print(course)
-                os.rename(event.src_path, f"{course}.csv") # rename file
-                print(f"file renamed to {course}.csv")
+                os.rename(event.src_path, f"{course + file_date}.csv") # rename file
+                print(f"file renamed to {course + file_date}.csv")
             except (FileExistsError,FileNotFoundError):
-                print(f"This course file : {course} already exists.")
+                print(f"This course file : {course + file_date} already exists.")
                 os.remove(event.src_path)
                 print("Duplicate file removed")
                 
