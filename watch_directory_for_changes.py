@@ -5,6 +5,11 @@ a) Rename the file according to the "Course Name" column in the csv.
 b) If the file exists it will auto delete it and prompt a message telling the user the file existed.
 c) save about 15 minutes per week when doing this.
 
+
+Things to add - 
+
+error handling for excel files (essentiall re-save as CSV to keep code clean)
+wsadmin report for apprenticeships. 
 """
 
 import time
