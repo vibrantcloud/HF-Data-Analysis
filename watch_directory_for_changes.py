@@ -28,10 +28,10 @@ print(f"The current location is set to {my_path}")
 print("To close the program hit CTRL-C on your keyboard whilst on the command terminal.\n")
 
 
+
 class MyHandler(FileSystemEventHandler):
     def __init__(self):
         self.last_modified = datetime.now()
-
     def on_modified(self, event):
         if datetime.now() - self.last_modified < timedelta(seconds=1):
             return
@@ -61,6 +61,11 @@ class MyHandler(FileSystemEventHandler):
                 print(f"This course file : {course+file_date} already exists.")
                 os.remove(event.src_path)
                 print("Duplicate file removed.")
+                
+    def on_deleted(self,event):
+        file= event.src_path.split('\\')[-1]
+        print(f"what the f**k! Someone deleted {file}!")
+
     
                 
 
