@@ -25,7 +25,7 @@ os.chdir(my_path)
 
 print("Hi, this program will autorename the Training Credits files we receive on a weekly basis")
 print(f"The current location is set to {my_path}")
-print("To close the program hit CTRL-C on your keyboard whilst on the command terminal.")
+print("To close the program hit CTRL-C on your keyboard whilst on the command terminal.\n")
 
 
 class MyHandler(FileSystemEventHandler):
